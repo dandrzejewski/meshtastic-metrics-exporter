@@ -81,7 +81,7 @@ Visualizes mesh topology from NeighborInfo packets with SNR-based coloring:
 
 ## Configuration
 
-Configure the exporter using a `.env` file:
+Configure the exporter using a `.env` file (copy the `.env.example`):
 ```dotenv
 # TimescaleDB connection
 DATABASE_URL=postgres://postgres:postgres@timescaledb:5432/meshtastic
