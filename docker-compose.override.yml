@@ -1,0 +1,16 @@
+services:
+  grafana:
+    ports:
+      - "127.0.0.1:3000:3000"
+    networks:
+      - mesh-bridge
+      - meshdash
+
+  exporter:
+    networks:
+      - mesh-bridge
+      - meshdash
+
+networks:
+  meshdash:
+    external: true
